@@ -1,0 +1,38 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${workspaceFolder}/.vscode/browse.vc.db",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/devel/include/**",
+        "/home/nvfly/NormalTools/Livox/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/utils/DecompROS/decomp_ros_utils/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/planner/drone_detect/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/planner/plan_manage/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/ekf_quat_pose/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/FAST_LIO/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/uav_simulator/mockamap/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/planner/path_searching/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/planner/plan_env/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/utils/pose_utils/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/utils/quadrotor_msgs/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/uav_simulator/so3_control/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/uav_simulator/so3_quadrotor_simulator/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/planner/swarm_bridge/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/planner/traj_opt/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/planner/src/planner/traj_utils/include/**",
+        "/home/nvfly/WorkSpace/NV_Fly/single_drone/src/utils/uav_utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-arm64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

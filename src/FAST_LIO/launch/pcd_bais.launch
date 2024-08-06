@@ -1,0 +1,18 @@
+<launch>
+<!-- Launch file for Livox MID360 LiDAR -->
+
+	<arg name="rviz" default="false" />
+
+	<param name="wxx/map_bias/initial_map_name" type="string" value="for_bias.pcd" />
+	<param name="wxx/map_bias/map_x_bias" type="double" value="20.1" />
+	<param name="wxx/map_bias/map_y_bias" type="double" value="10.2" />
+	<param name="wxx/map_bias/map_z_bias" type="double" value="-0.2" />
+	<param name="wxx/map_bias/map_yaw_bias" type="double" value="0.1" />
+
+	<node pkg="fast_lio" type="util_pcd_bais" name="util_pcd_bais" output="screen" /> 
+
+	<group if="$(arg rviz)">
+	<node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz" args="-d $(find fast_lio)/rviz_cfg/loam_livox.rviz" />
+	</group>
+
+</launch>

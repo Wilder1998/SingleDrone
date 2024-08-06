@@ -1,0 +1,10 @@
+wxx:
+  initial_align:
+    voxelgrid_filter_size:  0.2
+    max_iteration:          10
+    icp_mode:               4   # 4 is best
+    initial_map_size:       50
+
+    Init_Body_pos_x: 19.0
+    Init_Body_pos_y: 11.0
+    Init_Body_pos_z: 0.0

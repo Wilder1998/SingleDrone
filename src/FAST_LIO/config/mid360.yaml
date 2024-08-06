@@ -1,0 +1,65 @@
+common:
+  imu_topic: /livox/imu
+  lid_topic: /livox/lidar
+  time_offset_lidar_to_imu: 0.0
+  time_sync_en: false
+mapping:
+  acc_cov: 0.1
+  b_acc_cov: 0.0001
+  b_gyr_cov: 0.0001
+  det_range: 200.0
+  extrinsic_R:
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  - 0
+  - 0
+  - 0
+  - 1
+  extrinsic_T:
+  - -0.011
+  - -0.02329
+  - 0.04412
+  extrinsic_est_en: false
+  fov_degree: 360
+  gyr_cov: 0.1
+pcd_save:
+  interval: -1
+  pcd_save_en: true
+preprocess:
+  blind: 0.5
+  lidar_type: 1
+  scan_line: 4
+publish:
+  dense_publish_en: true
+  path_en: false
+  scan_bodyframe_pub_en: true
+  scan_publish_en: true
+  debug_circular_scan_publish_en: true
+  debug_circular_cloud_radius: 2.0
+wxx:
+  # Lidar_Odom = Lidar_wrt_Body_R*(Body_Odom + Lidar_wrt_Body_T)
+  Lidar_wrt_Body_R:
+    [  0.9656520,  0.0000000,  0.2598390,
+      0.0000000,  1.0000000,  0.0000000,
+      -0.2598390,  0.0000000,  0.9656520 ]
+  # - 0.0000000
+  # - 0.9661348
+  # - 0.2580377
+  # - -1.0000000
+  # - 0.0000000
+  # - 0.0000000
+  # - 0.0000000
+  # - -0.2580377
+  # - 0.9661348
+  Lidar_wrt_Body_T:
+  - 0
+  - 0
+  - 0
+  initial_map_from_pcd: false
+  map_incremental: true
+  initial_map_pcd_name: origin.pcd
+  save_new_map_to_pcd: true
+  new_map_pcd_name: new.pcd

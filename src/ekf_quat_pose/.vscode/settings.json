@@ -1,0 +1,12 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/nvfly/WorkSpace/Fly/localization/devel/lib/python3/dist-packages",
+        "/home/nvfly/NormalTools/Livox/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/nvfly/WorkSpace/Fly/localization/devel/lib/python3/dist-packages",
+        "/home/nvfly/NormalTools/Livox/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}
